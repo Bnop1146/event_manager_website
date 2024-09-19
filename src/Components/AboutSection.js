@@ -3,8 +3,8 @@ import image from '../assets/images/About section image.png';
 function AboutSection() {
 
   return (
-    <section className="bg-white py-12 relative overflow-hidden">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 relative z-10">
+    <section className="bg-white py-12 relative overflow-hidden ">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 relative z-10 px-2">
         {/* Text Section */}
         <div className="md:w-1/2 w-full text-left md:pr-8">
           <h4 className="text-3xl font-heading font-medium text-gray-300 mb-4 uppercase">
@@ -25,7 +25,7 @@ function AboutSection() {
         </div>
 
         {/* Image Section */}
-        <div className="md:w-1/2 w-full flex justify-center relative z-10">
+        <div className="md:w-1/2 w-full flex justify-end relative z-10">
           <div className="relative">
             <img 
               src={image}
