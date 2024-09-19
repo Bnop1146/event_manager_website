@@ -1,13 +1,17 @@
 import Navbar from '../src/Components/Navbar';
+import AboutSection from '../src/Components/AboutSection';
 import './App.css';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <h1 className="text-3xl text-sky-400/75 font-bold underline">
-        Hello world!
-      </h1>
+
+      <section id="home"  >
+        <AboutSection />
+      </section>
+      
+    
     </div>
   );
 }

@@ -3,24 +3,24 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import logo from '../assets/images/Mie_logo.png';
 
 const navigation = [
-  { name: 'Hjem', href: '#', current: false },
-  { name: 'Om Mig', href: '#', current: false },
-  { name: 'Portfølje', href: '#', current: false },
-  { name: 'Tjenester', href: '#', current: false },
-  { name: 'Kontakt', href: '#', current: false },
-]
+  { name: 'Hjem', href: '#home', current: true },
+  { name: 'Om Mig', href: '#about', current: false },
+  { name: 'Portfølje', href: '#portfolio', current: false },
+  { name: 'Tjenester', href: '#services', current: false },
+  { name: 'Kontakt', href: '#contact', current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 function Navbar() {
   return (
     <Disclosure as="nav" className="bg-white-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+        <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
+            {/* Mobile menu button */}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -30,7 +30,7 @@ function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:justify-between">
             <div className="flex flex-shrink-0 items-center">
-              <img alt="Your Company" src={logo} className="h-16 w-auto" />  
+              <img alt="Your Company" src={logo} className="h-16 w-auto" />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -40,7 +40,9 @@ function Navbar() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-black-100 hover:bg-gray-700 hover:text-white',
+                      item.current
+                        ? 'bg-blue-900 text-white'
+                        : 'text-black-100 hover:bg-blue-200 hover:text-grey-800',
                       'rounded-md px-3 py-2 text-sm font-medium',
                     )}
                   >
@@ -62,7 +64,9 @@ function Navbar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                item.current
+                  ? 'bg-gray-900 text-white'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                 'block rounded-md px-3 py-2 text-base font-medium',
               )}
             >
@@ -72,8 +76,7 @@ function Navbar() {
         </div>
       </DisclosurePanel>
     </Disclosure>
-  )
+  );
 }
-
 
 export default Navbar;
