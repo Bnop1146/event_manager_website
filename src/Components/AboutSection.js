@@ -1,4 +1,4 @@
-import image from '../assets/images/About section image.png';
+import image from '../assets/images/Big About section image.png';
 
 function AboutSection() {
 
@@ -30,10 +30,7 @@ function AboutSection() {
             <img 
               src={image}
               alt="Abstract Shaped"
-              className="w-full h-100/50 shadow-lg"
-              style={{
-                clipPath: 'polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%)',
-              }}
+              className="w-full h-100/50"
             />
           </div>
         </div>
