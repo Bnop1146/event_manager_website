@@ -12,13 +12,13 @@ function AboutSection() {
           </h4>
           <h1 className="text-5xl font-heading font-bold text-black-700 mb-8 leading-tight">
             Helping businesses deliver{' '}
-            <span className="text-green-500 underline">exceptional</span> buyer experiences.
+            <span className="text-regal-purple">exceptional</span> buyer experiences.
           </h1>
           <p className="font-text text-gray-600 mb-8 leading-relaxed">
             Vidyard is the leading video messaging and asynchronous communications platform for go-to-market teams. Millions of sales professionals and more than 250,000 go-to-market teams use Vidyard’s AI-powered video messaging, video hosting, and digital sales rooms to connect with more prospects and generate more revenue.
           </p>
           <button
-            className="font-text bg-blue-600 text-white py-4 px-8 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
+            className="font-text bg-regal-purple text-white py-4 px-8 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
           >
             Kontakt mig
           </button>
@@ -38,21 +38,9 @@ function AboutSection() {
           </div>
         </div>
       </div>
+      
 
-      {/* Geometric Shapes for Visual Design */}
-      {/* Green circular background */}
-      <div className="absolute -top-16 -left-16 w-64 h-64 bg-green-500 opacity-50 rounded-full z-0"></div>
 
-      {/* Dotted Overlay */}
-      <div className="absolute -top-10 -right-16 w-40 h-40 bg-white rounded-full border-dotted border-4 border-gray-300 z-0"></div>
-
-      {/* Irregular Blob Shape */}
-      <div
-        className="absolute bottom-0 right-0 w-72 h-72 bg-green-600 opacity-25"
-        style={{
-          clipPath: 'polygon(0% 100%, 100% 100%, 100% 0%, 60% 40%, 20% 20%)',
-        }}
-      ></div>
     </section>
   );
 }
