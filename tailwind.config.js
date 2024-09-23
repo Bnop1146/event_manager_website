@@ -9,6 +9,10 @@ module.exports = {
         text: ['Inter', 'sans-serif'], // Default font for normal text
         heading: ['Helvetica', 'Arial', 'sans-serif'], // Font for headings
       },
+
+      colors: {
+        'regal-purple': '#9332E8',
+      },
     },
   },
   plugins: [],
