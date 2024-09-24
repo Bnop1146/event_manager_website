@@ -16,7 +16,7 @@ html {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -3px; /* Space between text and underline */
+  bottom: 0px; /* Space between text and underline */
   height: 4px; /* Thickness of the underline */
   background-color: #6b21a8; /* The regal purple color */
   transform: scaleX(0); /* Start with no underline */

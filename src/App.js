@@ -6,12 +6,12 @@ function App() {
   return (
     <div>
       <Navbar />
-
-      <section id="home"  >
-        <AboutSection />
-      </section>
-      
-    
+      <div className=''>
+        <section id="home"  >
+          <AboutSection />
+        </section>
+        
+      </div>
     </div>
   );
 }
