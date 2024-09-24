@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        text: ['Inter', 'sans-serif'], // Default font for normal text
-        heading: ['Helvetica', 'Arial', 'sans-serif'], // Font for headings
+        text: ['Inter', 'sans-serif'], 
+        heading: ['Helvetica', 'Arial', 'sans-serif'], 
       },
 
       colors: {
@@ -15,5 +15,28 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.hover-custom-button': {
+          '&:hover': {
+            background: 'white',
+            color: '#6b21a8',
+            border: '2px solid #6b21a8',
+          },
+        },
+        '.custom-button': {
+          background: '#9332E8',
+          color: 'white',
+          paddingTop: '14px',
+          paddingBottom: '14px',
+          paddingLeft: '2rem',
+          paddingRight: '2rem',
+          border: '2px solid transparent',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }

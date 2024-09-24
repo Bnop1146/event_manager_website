@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <Disclosure as="nav" className="bg-white-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-1">
         <div className="relative flex items-center justify-between h-16">
           
           {/* Logo */}
