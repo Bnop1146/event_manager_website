@@ -2,41 +2,33 @@ html {
   scroll-behavior: smooth;
 }
 
-.App {
-  text-align: center;
+
+
+/* Custom underline hover and active effect */
+.underline-active {
+  position: relative;
+  display: inline-block; /* Ensure it works well in flexbox */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underline-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px; /* Space between text and underline */
+  height: 4px; /* Thickness of the underline */
+  background-color: #6b21a8; /* The regal purple color */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: left; /* Make it expand from the left */
+  transition: transform 1s ease; /* Smooth transition for hover */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.underline-active:hover::after {
+  transform: scaleX(1); /* Expands the underline on hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.underline-active[aria-current="page"]::after {
+  transform: scaleX(1); /* Underline fully expanded for active link */
+  transition: none; /* No animation, static underline for active link */
 }
