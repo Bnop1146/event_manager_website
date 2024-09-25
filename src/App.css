@@ -7,7 +7,7 @@ html {
 /* Custom underline hover and active effect */
 .underline-active {
   position: relative;
-  display: inline-block; /* Ensure it works well in flexbox */
+  display: block; /* Ensure it works well in flexbox */
   transition: all 0.3s ease-in-out; /* Smooth transition for hover */
 }
 
@@ -31,4 +31,11 @@ html {
 .underline-active[aria-current="page"]::after {
   transform: scaleX(1); /* Underline fully expanded for active link */
   transition: none; /* No animation, static underline for active link */
+}
+
+@media screen and (max-width: 639px) {
+  .underline-active[aria-current="page"]::after {
+    transform: scaleX(0.5); /* Underline fully expanded for active link */
+    transition: none; /* No animation, static underline for active link */
+  }
 }
