@@ -1,8 +1,9 @@
 import Navbar from './Components/Navbar';
 import AboutSection from './Components/AboutSection';
-import HeroBanner from './Components/HeroBanner';
+//import HeroBanner from './Components/HeroBanner';
 import BrandsSection from './Components/BrandsSection';
 import './App.css';
+import HeroBannerVideo from './Components/HeroBannerVideo';
 
 
 
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <div className=''>
         <section id="home"  >
-          <HeroBanner />
+          <HeroBannerVideo />
         </section>
         <section id="portfolio"  >
           <BrandsSection />
