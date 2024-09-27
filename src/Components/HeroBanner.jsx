@@ -3,8 +3,8 @@
 function HeroBanner() {
 
   return (
-    <section className='py-12 relative overflow-hidden'>
-      <div className="bg-white py-12 relative overflow-hidden"> 
+    <section className='py-12 relative overflow-hidden main-bg'>
+      <div className=" py-12 relative overflow-hidden"> 
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 gap-12">
           {/* Text Section */}
           <div className="md:w-100 w-full text-left md:pr-8">
@@ -24,7 +24,7 @@ function HeroBanner() {
           </div>
 
           {/* Image Section */}
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-2/3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:m-32">
             <div class="grid gap-4">
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""></img>
