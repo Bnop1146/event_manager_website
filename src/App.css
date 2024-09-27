@@ -41,3 +41,34 @@ html {
     transition: none; /* No animation, static underline for active link */
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-animate {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes floatButton {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-button {
+  animation: floatButton 3s ease-in-out infinite;
+}
