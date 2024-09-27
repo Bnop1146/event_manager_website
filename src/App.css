@@ -6,6 +6,14 @@ html {
   background-image: url("../src/assets/images/Main\ BG.png") ;
 }
 
+.main-bg-snow {
+  background-image: url('../src/assets/images/Main\ BG\ Snow.png'); /* Replace with the correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 /* Custom underline hover and active effect */
 .underline-active {
   position: relative;
@@ -71,4 +79,23 @@ html {
 
 .floating-button {
   animation: floatButton 3s ease-in-out infinite;
+}
+
+/* Balls container */
+.ball-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind the hero content */
+}
+
+/* Ball styles */
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  transform: scale(0); /* Balls start at a scale of 0 for pop-out effect */
+  transition: transform 1s ease-in-out;
 }

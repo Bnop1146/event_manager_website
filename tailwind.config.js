@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        text: ['Inter', 'sans-serif'], 
-        heading: ['Helvetica', 'Arial', 'sans-serif'], 
+        text: ['Inter', 'sans-serif'],
+        heading: ['Playfair Display', 'serif'],  // Update for Playfair Display
       },
 
       colors: {
@@ -16,7 +16,7 @@ module.exports = {
       },
 
       backgroundImagePurple: {
-        'main-background': "url('./src\assets\images\Main BG.png')", 
+        'main-background': "url('./src/assets/images/Main BG.png')",
       },
     },
   },
@@ -44,4 +44,4 @@ module.exports = {
       addUtilities(newUtilities, ['responsive', 'hover']);
     },
   ],
-}
+};

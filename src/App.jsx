@@ -1,9 +1,10 @@
 import Navbar from './Components/Navbar';
-import AboutSection from './Components/AboutSection';
+//import AboutSection from './Components/AboutSection';
 //import HeroBanner from './Components/HeroBanner';
-import BrandsSection from './Components/BrandsSection';
+//import BrandsSection from './Components/BrandsSection';
 import './App.css';
 import HeroBannerVideo from './Components/HeroBannerVideo';
+import HeroBannerSnow from './Components/HeroBannerBalls';
 
 
 
@@ -13,13 +14,13 @@ function App() {
       <Navbar />
       <div className=''>
         <section id="home"  >
-          <HeroBannerVideo />
+          <HeroBannerSnow />
         </section>
         <section id="portfolio"  >
-          <BrandsSection />
+          <HeroBannerVideo />
         </section>
         <section id="about"  >
-          <AboutSection />
+          
         </section>
         
       </div>
