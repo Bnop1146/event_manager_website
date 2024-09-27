@@ -2,7 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
+.main-bg {
+  background-image: url("../src/assets/images/Main\ BG.png") ;
+}
 
 /* Custom underline hover and active effect */
 .underline-active {
@@ -18,7 +20,7 @@ html {
   right: 0;
   bottom: 0px; /* Space between text and underline */
   height: 4px; /* Thickness of the underline */
-  background-color: #6b21a8; /* The regal purple color */
+  background-color: #E89332; /* The regal purple color */
   transform: scaleX(0); /* Start with no underline */
   transform-origin: left; /* Make it expand from the left */
   transition: transform 1s ease; /* Smooth transition for hover */

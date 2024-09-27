@@ -12,6 +12,11 @@ module.exports = {
 
       colors: {
         'regal-purple': '#9332E8',
+        'secondary-color': '#E89332',
+      },
+
+      backgroundImagePurple: {
+        'main-background': "url('./src\assets\images\Main BG.png')", 
       },
     },
   },
