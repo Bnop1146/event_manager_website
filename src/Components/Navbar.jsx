@@ -85,7 +85,7 @@ function Navbar() {
                         ? 'text-secondary-color' // Active link color when not scrolled
                         : 'text-white hover:text-secondary-color' // Non-active link color when not scrolled
                     ),
-                    'relative px-3 py-2 text-sm font-bold transition-all duration-300',
+                    'relative px-3 py-2 text-md font-bold transition-all duration-300',
                   )}
                 >
                   {item.name}
