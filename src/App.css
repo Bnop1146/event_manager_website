@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-bg {
-  background-image: url("../src/assets/images/Main\ BG.png") ;
-}
-
 .main-bg-snow {
   background-image: url('../src/assets/images/Main\ BG\ Snow.png'); /* Replace with the correct path */
   background-size: cover;
@@ -98,4 +94,50 @@ html {
   opacity: 0.7;
   transform: scale(0); /* Balls start at a scale of 0 for pop-out effect */
   transition: transform 1s ease-in-out;
+}
+
+.header-content {
+  position: relative;
+  height: 150px; /* Adjusted height for better fit on larger screens */
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    height: 120px; /* Smaller height for mobile screens */
+  }
+}
+
+.header-content h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem; /* Large size for desktop */
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .header-content h2 {
+    font-size: 2.5rem; /* Smaller size for mobile */
+  }
+}
+
+.header-content h2:nth-child(1) {
+  color: #2EC5CE;
+}
+
+.header-content h2:nth-child(2) {
+  color: #0D0149; /* Text color */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  animation: waveEffect 4s ease-in-out infinite;
+}
+
+@keyframes waveEffect {
+  0%, 100% {
+    clip-path: polygon(0% 46%, 12% 42%, 24% 48%, 36% 58%, 48% 66%, 60% 62%, 72% 54%, 84% 46%, 100% 50%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 66%, 12% 62%, 24% 58%, 36% 52%, 48% 42%, 60% 48%, 72% 54%, 84% 58%, 100% 62%, 100% 100%, 0% 100%);
+  }
 }

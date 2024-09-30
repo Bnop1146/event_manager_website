@@ -11,12 +11,13 @@ module.exports = {
       },
 
       colors: {
-        'regal-purple': '#9332E8',
+        'regal-purple': '#0D0149',
         'secondary-color': '#E89332',
+        'section-color': '#2EC5CE',
       },
 
       backgroundImagePurple: {
-        'main-background': "url('./src/assets/images/Main BG.png')",
+        'background-image': "url('./src/assets/images/Main BG.png')",
       },
     },
   },
@@ -27,12 +28,12 @@ module.exports = {
           '&:hover': {
             background: 'white',
             color: '#6b21a8',
-            border: '2px solid #6b21a8',
+            border: '2px solid #E89332',
           },
         },
         '.custom-button': {
-          background: '#9332E8',
-          color: 'white',
+          background: '#0D0149',
+          color: '#E89332',
           paddingTop: '14px',
           paddingBottom: '14px',
           paddingLeft: '2rem',
