@@ -43,7 +43,7 @@ function Navbar() {
   return (
     <Disclosure as="nav" className={classNames(
       'fixed top-0 w-full z-50 transition-colors duration-300',
-      isScrolled ? 'bg-white shadow-lg pb-4' : 'bg-transparent'
+      isScrolled ? 'bg-regal-purple shadow-lg pb-4' : 'bg-transparent'
     )}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-4">
         <div className="relative flex items-center justify-between h-16">
@@ -57,7 +57,7 @@ function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-secondary-color hover:bg-secondary-color hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-secondary-color hover:bg-secondary-color hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-color">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
@@ -79,7 +79,7 @@ function Navbar() {
                     isScrolled ? (
                       activeLink === item.href
                         ? 'text-secondary-color' // Active link color when scrolled
-                        : 'text-black hover:text-secondary-color' // Non-active link color when scrolled
+                        : 'text-white hover:text-secondary-color' // Non-active link color when scrolled
                     ) : (
                       activeLink === item.href
                         ? 'text-secondary-color' // Active link color when not scrolled
