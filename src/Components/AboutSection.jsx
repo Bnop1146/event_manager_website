@@ -11,7 +11,7 @@ function AboutSection() {
 
   return (
     <section className="bg-white py-12 relative overflow-hidden">
-      <div className='flex flex-col md:flex-row items-stretch justify-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 space-y-8 md:space-y-0 mb-16 gap-4'>
+      <div className='flex flex-col md:flex-row items-stretch justify-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 space-y-8 md:space-y-0 mb-24 md:mb-40 gap-4'>
         {/* Left Section */}
         <div className='md:w-1/2 w-full text-left bg-section-color p-6 rounded-xl flex items-center justify-center'>
           <div className="flex flex-col justify-between leading-normal">
@@ -104,7 +104,7 @@ function AboutSection() {
           <p className="font-text text-gray-600 text-lg sm:text-xl mb-8 leading-relaxed">
             Vidyard is the leading video messaging and asynchronous communications platform for go-to-market teams. Millions of sales professionals and more than 250,000 go-to-market teams use Vidyard’s AI-powered video messaging, video hosting, and digital sales rooms to connect with more prospects and generate more revenue.
           </p>
-          <button className="bg-secondary-color text-white py-2 px-6 rounded-lg text-lg font-medium hover:bg-primary-color transition duration-300 ease-in-out">
+          <button className="font-text custom-button rounded-xl text-lg font-medium hover-custom-button transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-100 duration-300">
             Kontakt mig
           </button>
         </div>

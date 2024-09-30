@@ -4,7 +4,7 @@ import AboutSection from './Components/AboutSection';
 //import HeroBanner from './Components/HeroBanner';
 import BrandsSection from './Components/BrandsSection';
 import './App.css';
-import Test from './Components/Text';
+
 
 
 
@@ -24,7 +24,7 @@ function App() {
         <section id="portfolio"  >
           <BrandsSection />
         </section>
-          <Test />
+
         
       </div>
     </div>
