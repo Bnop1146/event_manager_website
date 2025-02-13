@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import HeroTextImage from '../assets/images/Mie Knudsen small caps.png';
+import HeroTextImage from '../assets/images/Mie Knudsen.png';
 
 const HeroBannerBalls = () => {
 

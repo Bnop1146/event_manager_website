@@ -14,6 +14,7 @@ module.exports = {
         'regal-purple': '#0D0149',
         'secondary-color': '#E89332',
         'section-color': '#2EC5CE',
+        'color': '#333333',
       },
 
       backgroundImagePurple: {
@@ -26,19 +27,26 @@ module.exports = {
       const newUtilities = {
         '.hover-custom-button': {
           '&:hover': {
-            background: 'white',
-            color: '#6b21a8',
-            border: '2px solid #E89332',
+            background: '#6D7A71',
+            color: '#ffffff',
+            border: '2px solid transparent',
           },
         },
         '.custom-button': {
-          background: '#0D0149',
-          color: '#E89332',
+          background: 'transparent',
+          color: '#6D7A71',
           paddingTop: '14px',
           paddingBottom: '14px',
           paddingLeft: '2rem',
           paddingRight: '2rem',
-          border: '2px solid transparent',
+          border: '2px solid #6D7A71',
+        },
+        '.page-width': {
+          maxWidth: '1400px',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          paddingLeft: 'var(--page-gutter, 1.5rem)',
+          paddingRight: 'var(--page-gutter, 1.5rem)',
         },
       };
 

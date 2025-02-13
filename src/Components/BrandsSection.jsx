@@ -1,5 +1,5 @@
 import React from "react";
-import logo1 from '../assets/images/Mie new logo.png';
+import logo1 from '../assets/images/Logo with text.png';
 import logo2 from '../assets/images/Porche logo.png';
 
 const BrandGrid = () => {
